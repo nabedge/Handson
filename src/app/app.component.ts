@@ -6,10 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app works! hoge';
-  demoData: any = [
-    {name: "山田", age: 24}
-    ,{name: "tanaka", age: 28}
-    ,{name: "sato", age: 36}
-  ]
+  // title = 'app works! hoge';
+  // demoData: any = [
+  //   {name: "山田", age: 24}
+  //   ,{name: "tanaka", age: 28}
+  //   ,{name: "sato", age: 36}
+  // ]
 }

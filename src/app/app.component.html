@@ -1,11 +1,7 @@
-<h1>
-  {{title}}
-</h1>
-
-<form #f="ngForm" novalidate>
-  <input type="text" name="hoge" ngModel="required"/>
-  <p [hidden]="!f.form.dirty || f.form.valid">必須にゅうりょくです</p>
-</form>
+<h1>Issue Tracker</h1>
 <ul>
-  <li *ngFor="let data of demoData">{{data.name}} - {{data.age}}</li>
+  <li><a routerLink="home">Home</a></li>
+  <li><a routerLink="issue">Issue</a></li>
+  <li><a routerLink="wiki">Wiki</a></li>
 </ul>
+<router-outlet></router-outlet>

@@ -6,23 +6,26 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { IssueComponent } from './issue/issue.component';
-import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { WikiComponent } from './wiki/wiki.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+
+import { routing, appRoutesProviders} from './app.routes';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     IssueComponent,
-    PageNotFoundComponent,
-    WikiComponent
+    WikiComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    routing
   ],
-  providers: [],
+  providers: [appRoutesProviders],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
